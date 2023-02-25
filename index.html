@@ -11,13 +11,22 @@
       rel="icon"
       type="image/x-icon"
     />
-    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Inter:wght@400;500;600;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div id="wrapper">
-      <h1>Project Etch-A-Sketch</h1>
-      <div id="container"></div>
+      <h1>Etch-A-Sketch</h1>
+      <div class="bgDiv">
+        <div id="container"></div>
+      </div>
+      <button class="btn" id="clearBtn">Clear board</button>
     </div>
   </body>
 </html>
