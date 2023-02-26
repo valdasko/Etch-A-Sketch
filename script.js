@@ -1,7 +1,6 @@
 'use strict';
 console.log('script.js');
 
-// Nusitaikymai
 const sketchArea = document.getElementById('container');
 const clearBtn = document.getElementById('clearBtn');
 
@@ -18,10 +17,15 @@ function makeGrid(cols, rows) {
     });
   }
 }
-
 makeGrid(16, 16);
 
-function clearBoard() {
+// Random number which will be used to get random rgb value
+function randomNum(num) {
+  return Math.floor(Math.random() * num + 1);
+}
+
+// Reset btn to clear board and let user select grid
+clearBtn.addEventListener('click', () => {
   sketchArea.innerHTML = '';
   const gridChoice = prompt('How many squares per side? Max 100');
   if (gridChoice <= 100) {
@@ -29,10 +33,4 @@ function clearBoard() {
   } else {
     alert('Select 100 or less');
   }
-}
-
-clearBtn.addEventListener('click', clearBoard);
-
-function randomNum(num) {
-  return Math.floor(Math.random() * num + 1);
-}
+});
