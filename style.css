@@ -2,13 +2,12 @@
   box-sizing: border-box;
 }
 body {
-  background: #377ba8;
+  background: linear-gradient(to right, #304352, #d7d2cc);
 }
 #wrapper {
   display: grid;
   grid-template-rows: auto;
   place-items: center;
-
 }
 h1 {
   font-size: 4rem;
